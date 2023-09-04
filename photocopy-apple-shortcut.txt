@@ -1,0 +1,14 @@
+(Ask for Input Action) Ask for Text with Folder Name
+
+(Run Shell Script Action)
+num=0
+rsync -r /Volumes/your/sd-card-folder/* /your/destination/path
+mv /destination/original/folder-name /destination/Provided Input
+mkdir -p /Users/herb/Pictures/tmp/Provided Input/Provided Input-export/Provided Input-jpg
+
+for i in /destination/path/Provided Input/*.image-extension
+do mv  "$i" "$(printf /destination/path/Provided Input/Provided Input-'%04d' $num).${i#*.}"; ((num++));
+done
+
+open /destination/path/
+
